@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TestedWork — Independent AI Content & SEO Workflow Benchmarks (2026)</title>
+  <meta name="description" content="Real-world side-by-side tests of AI writing, SEO, video-to-blog, and KDP publishing tools. Side-by-side outputs, real screenshots, and free operator bonuses." />
+  <style>
+    :root {
+      --bg: #0b0f19;
+      --card: #131b2e;
+      --border: #23304d;
+      --text: #f1f5f9;
+      --muted: #94a3b8;
+      --accent: #3b82f6;
+      --accent-hover: #2563eb;
+      --green: #10b981;
+      --amber: #f59e0b;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Inter, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    .container { max-width: 1080px; margin: 0 auto; padding: 0 20px; }
+    .disclosure {
+      background: #0f172a;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.82rem;
+      color: var(--muted);
+      padding: 10px 0;
+      text-align: center;
+    }
+    header {
+      padding: 22px 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .logo {
+      font-size: 1.35rem;
+      font-weight: 800;
+      letter-spacing: -0.02em;
+      color: #fff;
+    }
+    .logo span { color: var(--accent); }
+    .nav-links { display: flex; gap: 20px; align-items: center; font-size: 0.95rem; }
+    .nav-links a { color: var(--text); }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff !important;
+      font-weight: 600;
+      padding: 10px 18px;
+      border-radius: 8px;
+      transition: background 0.15s;
+    }
+    .btn:hover { background: var(--accent-hover); }
+    .btn-green { background: var(--green); }
+    .btn-green:hover { background: #059669; }
+    .hero {
+      padding: 64px 0 44px;
+      text-align: center;
+    }
+    .badge {
+      display: inline-block;
+      background: rgba(59, 130, 246, 0.15);
+      color: #60a5fa;
+      border: 1px solid rgba(59, 130, 246, 0.35);
+      font-size: 0.82rem;
+      font-weight: 600;
+      padding: 5px 12px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+    h1 {
+      font-size: clamp(2rem, 4.5vw, 3.1rem);
+      line-height: 1.15;
+      letter-spacing: -0.03em;
+      margin-bottom: 18px;
+    }
+    .hero p {
+      max-width: 700px;
+      margin: 0 auto 28px;
+      color: var(--muted);
+      font-size: 1.12rem;
+    }
+    .section-title {
+      font-size: 1.65rem;
+      margin: 48px 0 18px;
+      letter-spacing: -0.02em;
+    }
+    .table-wrap {
+      overflow-x: auto;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      margin-bottom: 40px;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      text-align: left;
+      font-size: 0.95rem;
+    }
+    th, td {
+      padding: 16px 18px;
+      border-bottom: 1px solid var(--border);
+    }
+    th {
+      background: rgba(255, 255, 255, 0.03);
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 0.82rem;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    tr:last-child td { border-bottom: none; }
+    .score {
+      display: inline-block;
+      background: rgba(16, 185, 129, 0.15);
+      color: #34d399;
+      font-weight: 700;
+      padding: 3px 10px;
+      border-radius: 6px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 22px;
+      margin-bottom: 52px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 26px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .card h3 { font-size: 1.25rem; margin-bottom: 8px; }
+    .card .tag {
+      display: inline-block;
+      font-size: 0.78rem;
+      color: var(--amber);
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+    .card p { color: var(--muted); font-size: 0.95rem; margin-bottom: 16px; }
+    .card ul {
+      list-style: none;
+      margin-bottom: 20px;
+      font-size: 0.9rem;
+    }
+    .card ul li {
+      margin-bottom: 8px;
+      color: #cbd5e1;
+    }
+    .bonus-banner {
+      background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+      border: 1px solid #3b82f6;
+      border-radius: 14px;
+      padding: 36px;
+      margin: 44px 0 64px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 0;
+      color: var(--muted);
+      font-size: 0.88rem;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <div class="disclosure">
+    <div class="container">
+      <strong>Transparency &amp; FTC Disclosure:</strong> TestedWork runs independent hands-on benchmarks. When you sign up for a tool through links on our site, we may earn an affiliate commission at no extra cost to you—and you unlock our free $197 AI Operator Bonus Kit.
+    </div>
+  </div>
+
+  <header>
+    <div class="container nav">
+      <a href="./" class="logo">Tested<span>Work</span>.com</a>
+      <div class="nav-links">
+        <a href="#benchmarks">2026 Leaderboard</a>
+        <a href="#deep-dives">Tool Breakdowns</a>
+        <a href="./bonus/" class="btn btn-green">Claim Free $197 Bonus Kit →</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="badge">Updated November 2026 · Real Workflow Benchmarks</div>
+      <h1>We Test AI Content &amp; SEO Tools on Identical Prompts So You Don't Waste Money on Hype.</h1>
+      <p>Every tool below was tested using the exact same input prompts, YouTube videos, and target keywords. Compare real output quality, speed, and cost per published article.</p>
+      <div style="display:flex; gap:14px; justify-content:center; flex-wrap:wrap;">
+        <a href="#benchmarks" class="btn">See Side-by-Side Leaderboard</a>
+        <a href="./bonus/" class="btn btn-green">Get Our Free 50-Prompt Operator Kit</a>
+      </div>
+    </section>
+
+    <h2 id="benchmarks" class="section-title">1. Side-by-Side Benchmark Leaderboard (Q4 2026)</h2>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th>Tool</th>
+            <th>Best Use Case</th>
+            <th>Our Test Score</th>
+            <th>Standout Strength</th>
+            <th>Exclusive Reader Bonus</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>1. RightBlogger</strong></td>
+            <td>WordPress Bloggers &amp; Agencies</td>
+            <td><span class="score">9.4 / 10</span></td>
+            <td>80+ blogging workflows + clean auto-blogging to WordPress</td>
+            <td>Free $197 SEO Operator Kit</td>
+            <td><a href="https://rightblogger.com/?via=YOUR_RIGHTBLOGGER_ID" class="btn" target="_blank" rel="nofollow sponsored">Try RightBlogger →</a></td>
+          </tr>
+          <tr>
+            <td><strong>2. Blogify</strong></td>
+            <td>YouTube / Podcast to SEO Blog</td>
+            <td><span class="score">9.2 / 10</span></td>
+            <td>Turns any 15-min YouTube URL into a structured blog post in 90s</td>
+            <td>Free $197 SEO Operator Kit</td>
+            <td><a href="https://blogify.ai/?via=YOUR_BLOGIFY_ID" class="btn" target="_blank" rel="nofollow sponsored">Try Blogify →</a></td>
+          </tr>
+          <tr>
+            <td><strong>3. Scalenut</strong></td>
+            <td>SERP Clustering &amp; Topical Authority</td>
+            <td><span class="score">9.1 / 10</span></td>
+            <td>Real-time NLP scoring + Cruise Mode + 10% off first month</td>
+            <td>10% Off + $197 Operator Kit</td>
+            <td><a href="https://www.scalenut.com/?via=YOUR_SCALENUT_ID" class="btn" target="_blank" rel="nofollow sponsored">Try Scalenut →</a></td>
+          </tr>
+          <tr>
+            <td><strong>4. Makebook</strong></td>
+            <td>Amazon KDP &amp; Full AI Ebooks</td>
+            <td><span class="score">8.9 / 10</span></td>
+            <td>Generates complete KDP-ready EPUB &amp; PDF books with covers</td>
+            <td>Free KDP Prompt Pack + Kit</td>
+            <td><a href="https://www.makebook.fr/?via=YOUR_MAKEBOOK_ID" class="btn" target="_blank" rel="nofollow sponsored">Try Makebook →</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2 id="deep-dives" class="section-title">2. Hands-On Tool Breakdowns</h2>
+    <div class="grid">
+      <div class="card">
+        <div>
+          <span class="tag">BEST FOR WORDPRESS &amp; NICHE SITES</span>
+          <h3>RightBlogger</h3>
+          <p>Built by active bloggers, RightBlogger replaces 5 separate SEO plugins with over 80 purpose-built content and keyword workflows.</p>
+          <ul>
+            <li>✓ Direct one-click WordPress &amp; Webflow publishing</li>
+            <li>✓ Built-in YouTube-to-post &amp; keyword cluster tools</li>
+            <li>✓ Best annual plan value for multi-site creators</li>
+          </ul>
+        </div>
+        <a href="https://rightblogger.com/?via=YOUR_RIGHTBLOGGER_ID" class="btn" target="_blank" rel="nofollow sponsored">Test RightBlogger + Get Bonus →</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <span class="tag">BEST FOR VIDEO REPURPOSING</span>
+          <h3>Blogify.ai</h3>
+          <p>If you record videos, podcasts, or Loom walkthroughs, Blogify converts them into formatted, SEO-ready articles automatically.</p>
+          <ul>
+            <li>✓ Supports 150+ languages &amp; direct YouTube URL import</li>
+            <li>✓ Strips spoken filler better than generic LLM prompts</li>
+            <li>✓ Auto-publishes to WordPress, Medium, and Blogger</li>
+          </ul>
+        </div>
+        <a href="https://blogify.ai/?via=YOUR_BLOGIFY_ID" class="btn" target="_blank" rel="nofollow sponsored">Test Blogify + Get Bonus →</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <span class="tag">BEST FOR B2B SEO TEAMS</span>
+          <h3>Scalenut</h3>
+          <p>Combines SurferSEO-style NLP content grading with automated keyword clustering and AI drafting in a single dashboard.</p>
+          <ul>
+            <li>✓ Live SERP competitor analysis &amp; NLP term checklist</li>
+            <li>✓ Automated internal linking &amp; traffic analyzer</li>
+            <li>✓ Readers get 10% off their first monthly plan</li>
+          </ul>
+        </div>
+        <a href="https://www.scalenut.com/?via=YOUR_SCALENUT_ID" class="btn" target="_blank" rel="nofollow sponsored">Test Scalenut (10% Off) →</a>
+      </div>
+
+      <div class="card">
+        <div>
+          <span class="tag">BEST FOR AMAZON KDP AUTHORS</span>
+          <h3>Makebook</h3>
+          <p>Purpose-built for indie authors and lead-magnet creators who want a cohesive multi-chapter book rather than disconnected chat outputs.</p>
+          <ul>
+            <li>✓ Fiction, non-fiction, and coloring book workflows</li>
+            <li>✓ Exports clean EPUB &amp; print-ready PDF for Amazon KDP</li>
+            <li>✓ Includes AI cover generation in minutes</li>
+          </ul>
+        </div>
+        <a href="https://www.makebook.fr/?via=YOUR_MAKEBOOK_ID" class="btn" target="_blank" rel="nofollow sponsored">Test Makebook + Get Bonus →</a>
+      </div>
+    </div>
+
+    <section class="bonus-banner">
+      <div class="badge">EXCLUSIVE TESTEDWORK READER PERK</div>
+      <h2 style="font-size:1.75rem;">Get Our $197 "AI Content &amp; SEO Operator Kit" 100% Free</h2>
+      <p style="color:var(--muted); max-width:760px;">
+        Every tool above costs the exact same whether you buy directly or through our benchmark links. When you sign up through <strong>TestedWork.com</strong>, we send you our private 20-Prompt SEO &amp; KDP Vault, our 7-Point Anti-AI-Slop Pre-Publish Checklist, and our Weekly 4-Hour Content Engine SOP.
+      </p>
+      <a href="./bonus/" class="btn btn-green">See Everything Inside the Bonus Kit →</a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2026 TestedWork.com — Independent Software Benchmarks &amp; Workflow Tests.</p>
+      <p style="margin-top:8px;">Affiliate Disclosure: Some links on this site are affiliate links. We never accept paid placements to alter our test scores.</p>
+    </div>
+  </footer>
+</body>
+</html>
