@@ -3,8 +3,77 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>TestedWork — Independent AI Content, SEO & KDP Workflow Benchmarks (2026)</title>
+  <title>TestedWork | Independent AI Content, SEO &amp; KDP Workflow Benchmarks (2026)</title>
   <meta name="description" content="Real-world side-by-side tests of AI writing, SEO, video-to-blog, and KDP publishing tools. Side-by-side prompt outputs, pricing math, and free $197 operator bonuses." />
+  <link rel="canonical" href="https://testedwork.com/" />
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://testedwork.com/#organization",
+        "name": "TestedWork",
+        "url": "https://testedwork.com/",
+        "description": "Independent software benchmarks for AI content writing, SEO optimization, video-to-blog repurposing, and Amazon KDP publishing workflows.",
+        "email": "bonus@testedwork.com"
+      },
+      {
+        "@type": "ItemList",
+        "name": "AI Content, SEO & Publishing Software Leaderboard (2026)",
+        "itemListOrder": "https://schema.org/ItemListOrderDescending",
+        "numberOfItems": 4,
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "RightBlogger",
+            "url": "https://testedwork.com/compare/rightblogger-vs-blogify/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Blogify.ai",
+            "url": "https://testedwork.com/compare/rightblogger-vs-blogify/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "name": "Scalenut",
+            "url": "https://testedwork.com/compare/scalenut-vs-rightblogger/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "name": "Makebook",
+            "url": "https://testedwork.com/reviews/makebook-ai-kdp-review/"
+          }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How does TestedWork run its software benchmarks?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We test each platform on identical real-world tasks: converting a 14-minute technical YouTube video into a tutorial, drafting a 2,000-word article for a competitive B2B keyword, and exporting a multi-chapter ebook. Each tool is graded using our weighted Lab Score rubric: Output Structure (35%), Editing Time Saved (25%), SEO/CMS Automation (20%), and True Cost-Per-Asset Value (20%)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I claim the free $197 TestedWork AI Content & SEO Operator Kit?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sign up for any trial or paid plan of RightBlogger, Blogify, Scalenut, or Makebook using the partner links on TestedWork.com, then follow the instructions on our Bonus Claim Page to receive our 20-Prompt Vault, 7-Point Pre-Publish QA Checklist, and 4-Hour Weekly Content SOP."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
   <style>
     :root {
       --bg: #0b0f19;
@@ -17,6 +86,7 @@
       --accent-hover: #2563eb;
       --green: #10b981;
       --amber: #f59e0b;
+      --red: #f87171;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     body {
@@ -115,6 +185,20 @@
       margin-bottom: 22px;
       font-size: 0.98rem;
     }
+    .rubric-bar {
+      background: var(--card-alt);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 12px 16px;
+      margin-bottom: 18px;
+      font-size: 0.86rem;
+      color: var(--muted);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
     .table-wrap {
       overflow-x: auto;
       background: var(--card);
@@ -183,6 +267,12 @@
       margin-bottom: 8px;
       color: #cbd5e1;
     }
+    .skip-line {
+      color: var(--red) !important;
+      font-size: 0.86rem;
+      padding-top: 6px;
+      border-top: 1px dashed var(--border);
+    }
     .example-box {
       background: var(--card);
       border: 1px solid var(--border);
@@ -215,12 +305,36 @@
       border: 1px solid #3b82f6;
       border-radius: 14px;
       padding: 36px;
-      margin: 44px 0 64px;
+      margin: 44px 0 36px;
       display: flex;
       flex-direction: column;
       gap: 16px;
       align-items: flex-start;
     }
+    .ai-verify-box {
+      background: var(--card-alt);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 20px 24px;
+      margin: 0 0 56px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px;
+      font-size: 0.9rem;
+    }
+    .ai-links { display: flex; gap: 10px; flex-wrap: wrap; }
+    .ai-pill {
+      background: var(--card);
+      border: 1px solid var(--border);
+      color: var(--text) !important;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.82rem;
+      font-weight: 600;
+    }
+    .ai-pill:hover { border-color: var(--accent); }
     footer {
       border-top: 1px solid var(--border);
       padding: 32px 0;
@@ -233,7 +347,7 @@
 <body>
   <div class="disclosure">
     <div class="container">
-      <strong>Transparency &amp; FTC Disclosure:</strong> TestedWork runs independent hands-on benchmarks. When you sign up for a tool through links on our site, we may earn an affiliate commission at no extra cost to you—and you unlock our free $197 AI Operator Bonus Kit.
+      <strong>Transparency &amp; FTC Disclosure:</strong> TestedWork runs independent workflow benchmarks. When you sign up for a tool through links on our site, we may earn an affiliate commission at no extra cost to you, and you unlock our free $197 AI Operator Bonus Kit. <a href="./about/#disclosure">Learn more ›</a>
     </div>
   </div>
 
@@ -245,6 +359,7 @@
         <a href="#live-examples">Prompt &amp; Output Examples</a>
         <a href="#comparisons">Head-to-Head Tests</a>
         <a href="#pricing-math">Cost Calculator</a>
+        <a href="./about/#methodology">How We Test</a>
         <a href="./bonus/" class="btn btn-green">Claim Free $197 Bonus Kit →</a>
       </div>
     </div>
@@ -263,7 +378,11 @@
     </section>
 
     <h2 id="benchmarks" class="section-title">1. Side-by-Side Benchmark Leaderboard (Q4 2026)</h2>
-    <p class="section-sub">Ranked by output structure, editing time saved, CMS automation, and true monthly/annual ROI.</p>
+    <p class="section-sub">Ranked by output structure, editing time saved, CMS automation, and true monthly or annual ROI.</p>
+    <div class="rubric-bar">
+      <span><strong>TestedWork Lab Score Formula:</strong> Output Structure &amp; Accuracy (35%) · Editing Time Saved (25%) · SEO/CMS Automation (20%) · Cost-Per-Asset Value (20%).</span>
+      <a href="./about/#methodology">Read Full Methodology →</a>
+    </div>
     <div class="table-wrap">
       <table>
         <thead>
@@ -326,7 +445,7 @@
     </div>
 
     <h2 id="live-examples" class="section-title">2. Real Prompt &amp; Output Examples from Our Lab</h2>
-    <p class="section-sub">Here is what happens when you feed the exact same input into different AI content engines—without cherry-picking.</p>
+    <p class="section-sub">Here is what happens when you feed the exact same input into different AI content engines, without cherry-picking.</p>
 
     <div class="example-box">
       <div class="badge" style="margin-bottom:10px;">EXAMPLE BENCHMARK #1 · YOUTUBE-TO-BLOG WORKFLOW</div>
@@ -374,7 +493,7 @@ Resulting NLP Content Score: 84 / 100 on first draft (vs top-10 SERP average of 
         <div>
           <span class="tag">HEAD-TO-HEAD SHOWDOWN</span>
           <h3>RightBlogger vs Blogify (2026)</h3>
-          <p>We tested both on a 14-minute YouTube tutorial and compared unlimited words ($49–$59/mo) against Blogify's $15/mo multi-source repurposing engine.</p>
+          <p>We tested both on a 14-minute YouTube tutorial and compared unlimited words ($49 to $59/mo) against Blogify's $15/mo multi-source repurposing engine.</p>
         </div>
         <a href="./compare/rightblogger-vs-blogify/" class="btn">Read Full Comparison →</a>
       </div>
@@ -383,7 +502,7 @@ Resulting NLP Content Score: 84 / 100 on first draft (vs top-10 SERP average of 
         <div>
           <span class="tag">SEO &amp; GEO BENCHMARK</span>
           <h3>Scalenut vs RightBlogger (2026)</h3>
-          <p>Both start at $59/mo monthly—so should you buy Scalenut's live NLP SERP grader &amp; AI visibility tracker, or RightBlogger's 80+ unlimited blogging tools?</p>
+          <p>Both start at $59/mo monthly, so should you buy Scalenut's live NLP SERP grader and AI visibility tracker, or RightBlogger's 80+ unlimited blogging tools?</p>
         </div>
         <a href="./compare/scalenut-vs-rightblogger/" class="btn">Read Full Comparison →</a>
       </div>
@@ -423,16 +542,16 @@ Resulting NLP Content Score: 84 / 100 on first draft (vs top-10 SERP average of 
           </tr>
           <tr>
             <td><strong>Blogify.ai</strong></td>
-            <td>~$15/mo – $49/mo tiers</td>
+            <td>~$15/mo to $49/mo tiers</td>
             <td>Discounted annual billing</td>
-            <td><strong>~$0.75 – $1.50 / post</strong></td>
+            <td><strong>~$0.75 to $1.50 / post</strong></td>
             <td>Requires higher credit tier</td>
-            <td>YouTubers &amp; podcasters repurposing 10–30 videos/mo</td>
+            <td>YouTubers &amp; podcasters repurposing 10 to 30 videos/mo</td>
           </tr>
           <tr>
             <td><strong>Scalenut (Starter / Plus)</strong></td>
             <td>$59/mo ($53.10 1st mo w/ 10% off)</td>
-            <td>Frequent 50%–60% annual promos</td>
+            <td>Frequent 50% to 60% annual promos</td>
             <td>~$2.65 / post</td>
             <td>Requires Plus ($89/mo) or Pro ($199/mo)</td>
             <td>B2B teams ranking high-value commercial keywords</td>
@@ -441,7 +560,7 @@ Resulting NLP Content Score: 84 / 100 on first draft (vs top-10 SERP average of 
             <td><strong>Makebook</strong></td>
             <td>Per-book / Creator plans</td>
             <td>Flexible book credits</td>
-            <td>~$2–$5 per full KDP book</td>
+            <td>~$2 to $5 per full KDP book</td>
             <td>Scales per published title</td>
             <td>Amazon KDP authors &amp; B2B ebook lead magnets</td>
           </tr>
@@ -460,6 +579,7 @@ Resulting NLP Content Score: 84 / 100 on first draft (vs top-10 SERP average of 
             <li>✓ Unlimited AI words on every paid tier</li>
             <li>✓ 1-click publish to WordPress, Webflow, Ghost, Shopify, Wix</li>
             <li>✓ Automated Site Agent fixes broken links &amp; adds internal links</li>
+            <li class="skip-line">✗ <strong>Skip if:</strong> You only convert a few YouTube videos per month on a tight budget (use <a href="#deep-dives">Blogify.ai</a> instead).</li>
           </ul>
         </div>
         <a href="https://rightblogger.com/?via=YOUR_RIGHTBLOGGER_ID" class="btn" target="_blank" rel="nofollow sponsored">Test RightBlogger + Get Bonus →</a>
@@ -474,6 +594,7 @@ Resulting NLP Content Score: 84 / 100 on first draft (vs top-10 SERP average of 
             <li>✓ Supports 50+ input sources &amp; direct YouTube URL import</li>
             <li>✓ Auto-inserts contextual affiliate links &amp; summary tables</li>
             <li>✓ Publishes directly to WordPress, Medium, Blogger &amp; LinkedIn</li>
+            <li class="skip-line">✗ <strong>Skip if:</strong> You need unlimited word generation or deep SERP keyword clustering (use <a href="#deep-dives">RightBlogger</a> instead).</li>
           </ul>
         </div>
         <a href="https://blogify.ai/?via=YOUR_BLOGIFY_ID" class="btn" target="_blank" rel="nofollow sponsored">Test Blogify + Get Bonus →</a>
@@ -488,6 +609,7 @@ Resulting NLP Content Score: 84 / 100 on first draft (vs top-10 SERP average of 
             <li>✓ Live top-30 SERP competitor analysis &amp; NLP term checklist</li>
             <li>✓ Tracks brand citations across ChatGPT, Perplexity &amp; AI Overviews</li>
             <li>✓ Readers get 10% off their first monthly plan via our link</li>
+            <li class="skip-line">✗ <strong>Skip if:</strong> You run casual hobby blogs and do not need real-time NLP grading (use <a href="#deep-dives">RightBlogger</a> instead).</li>
           </ul>
         </div>
         <a href="https://www.scalenut.com/?via=YOUR_SCALENUT_ID" class="btn" target="_blank" rel="nofollow sponsored">Test Scalenut (10% Off) →</a>
@@ -502,6 +624,7 @@ Resulting NLP Content Score: 84 / 100 on first draft (vs top-10 SERP average of 
             <li>✓ Fiction, non-fiction, and coloring book workflows</li>
             <li>✓ Exports clean EPUB &amp; print-ready PDF for Amazon KDP</li>
             <li>✓ Includes AI cover generation in minutes</li>
+            <li class="skip-line">✗ <strong>Skip if:</strong> You are writing web blog posts rather than multi-chapter books or PDF lead magnets.</li>
           </ul>
         </div>
         <a href="https://www.makebook.fr/?via=YOUR_MAKEBOOK_ID" class="btn" target="_blank" rel="nofollow sponsored">Test Makebook + Get Bonus →</a>
@@ -511,7 +634,7 @@ Resulting NLP Content Score: 84 / 100 on first draft (vs top-10 SERP average of 
     <h2 class="section-title">6. Frequently Asked Questions</h2>
     <div class="faq-item">
       <h3>How does TestedWork run its software benchmarks?</h3>
-      <p>We test every platform on identical real-world tasks: converting a 14-minute technical YouTube video into a tutorial, drafting a 2,000-word article for a KD-50+ B2B keyword, and exporting a multi-chapter ebook. We grade tools on output structure, factual accuracy, editing time required, and true cost per published post.</p>
+      <p>We test every platform on identical real-world tasks: converting a 14-minute technical YouTube video into a tutorial, drafting a 2,000-word article for a KD-50+ B2B keyword, and exporting a multi-chapter ebook. We grade tools using our transparent <a href="./about/#methodology">4-part Lab Score formula</a>: Output Structure (35%), Editing Time Saved (25%), SEO/CMS Automation (20%), and True Cost-Per-Asset Value (20%).</p>
     </div>
     <div class="faq-item">
       <h3>How do I claim the free $197 TestedWork AI Content &amp; SEO Operator Kit?</h3>
@@ -526,16 +649,34 @@ Resulting NLP Content Score: 84 / 100 on first draft (vs top-10 SERP average of 
       </p>
       <a href="./bonus/" class="btn btn-green">See Everything Inside the Bonus Kit →</a>
     </section>
+
+    <div class="ai-verify-box">
+      <div>
+        <strong>Short on time? Ask an AI assistant to summarize &amp; verify our benchmarks:</strong>
+        <div style="color:var(--muted); font-size:0.82rem; margin-top:2px;">Opens a pre-filled prompt comparing RightBlogger, Blogify, Scalenut, and Makebook using TestedWork's benchmark data.</div>
+      </div>
+      <div class="ai-links">
+        <a class="ai-pill" href="https://chatgpt.com/?q=Read+https%3A%2F%2Ftestedwork.com%2F+and+summarize+how+RightBlogger%2C+Blogify%2C+Scalenut%2C+and+Makebook+compare+on+pricing+and+real+output+benchmarks." target="_blank" rel="noopener">Verify on ChatGPT ↗</a>
+        <a class="ai-pill" href="https://www.perplexity.ai/search/new?q=Read+https%3A%2F%2Ftestedwork.com%2F+and+summarize+the+benchmark+differences+between+RightBlogger%2C+Blogify%2C+Scalenut%2C+and+Makebook." target="_blank" rel="noopener">Verify on Perplexity ↗</a>
+        <a class="ai-pill" href="https://claude.ai/new?q=Read+https%3A%2F%2Ftestedwork.com%2F+and+help+me+choose+between+RightBlogger%2C+Blogify%2C+Scalenut%2C+and+Makebook+based+on+their+cost-per-article+benchmarks." target="_blank" rel="noopener">Verify on Claude ↗</a>
+      </div>
+    </div>
   </main>
 
   <footer>
     <div class="container">
-      <p>© 2026 TestedWork.com — Independent Software Benchmarks &amp; Workflow Tests.</p>
+      <p>© 2026 TestedWork.com | Independent Software Benchmarks &amp; Workflow Tests.</p>
       <p style="margin-top:8px;">
         <a href="./compare/rightblogger-vs-blogify/">RightBlogger vs Blogify</a> ·
         <a href="./compare/scalenut-vs-rightblogger/">Scalenut vs RightBlogger</a> ·
         <a href="./reviews/makebook-ai-kdp-review/">Makebook KDP Review</a> ·
         <a href="./bonus/">Free $197 Bonus Kit</a>
+      </p>
+      <p style="margin-top:8px;">
+        <a href="./about/#methodology">How We Test</a> ·
+        <a href="./about/#disclosure">Editorial &amp; FTC Disclosure</a> ·
+        <a href="./about/#privacy">Privacy Policy &amp; Terms</a> ·
+        <a href="./about/#contact">Contact</a>
       </p>
       <p style="margin-top:8px;">Affiliate Disclosure: Some links on this site are affiliate links. We never accept paid placements to alter our test scores.</p>
     </div>
